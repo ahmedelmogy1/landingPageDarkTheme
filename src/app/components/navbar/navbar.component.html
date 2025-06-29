@@ -1,0 +1,36 @@
+<div class="bg-black">
+  <div class="flex justify-between items-center py-4 px-4 container mx-auto relative">
+
+
+    <div class="relative">
+      <div class="absolute w-full top-2 bottom-2 bg-[linear-gradient(to_right,#F87BFF,#FB92CF,#FFDD9B,#C2F0B1,#2FD8FE)] blur-md"></div>
+      <img src="./assets/images/logosaas.png" class="w-12 h-12 relative" alt="Logo">
+    </div>
+
+
+    <div class="md:hidden z-50" (click)="toggleMenu()">
+      <div class="border-2 rounded-lg border-white text-white w-10 h-10 flex justify-center items-center border-opacity-60">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </div>
+
+    <nav
+      [ngClass]="{
+        'translate-x-0 opacity-100 pointer-events-auto': isMenuOpen,
+        '-translate-x-full opacity-0 pointer-events-none': !isMenuOpen,
+        'md:translate-x-0 md:opacity-100 md:pointer-events-auto': true
+      }"
+      class="fixed top-0 left-0 w-full h-screen bg-black text-white flex flex-col items-center justify-center gap-6
+             transform transition-all duration-300 ease-in-out z-40 md:justify-end md:static md:h-auto md:flex-row md:bg-transparent md:gap-6"
+    >
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">Home</a>
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">About</a>
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">Feature</a>
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">Help</a>
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">Updates</a>
+      <a href="#" class="hover:text-opacity-100 text-opacity-60">Customers</a>
+      <button class="bg-white py-2 px-3 text-black rounded-lg">Get for Free</button>
+    </nav>
+  </div>
+</div>
+

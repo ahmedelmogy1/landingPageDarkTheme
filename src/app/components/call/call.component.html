@@ -1,0 +1,15 @@
+<div class="bg-black text-white relative overflow-hidden  py-36 ">
+    <div class="container mx-auto  ">
+        <h2 class="text-center text-5xl lg:text-6xl font-bold tracking-tighter select-none sm:text-6xl " >Get instant access</h2>
+        <p class="mt-5 text-center text-xl text-white/70 sm:px-16 md:px-24  2xl:p-0">Celebrate the joy of accomplishment with an app designed to track your progress and motivate your effort</p>
+
+        <form [formGroup]="contact" class="mt-12 grid grid-cols-1  sm:grid-cols-6 content-center gap-2.5 flex-wrap sm:px-4 px-14">
+            <input type="text" FormControlName="email" placeholder="your@gmail.com" class="h-12 bg-white/20 rounded-lg px-5 font-medium placeholder:text-[#9CA3AF] sm:col-start-2  sm:col-end-5">
+            <button class="bg-white text-black h-12 rounded-lg">Get access</button>
+        </form>
+
+
+        <img src="./assets/images/helix2.png" appScrollMove #img1 alt="helix2" class="absolute   top-[160px]    2xl:right-[80%] xl:right-[85%] lg:right-[87%] md:right-[85%] hidden md:inline-block  " >
+        <img src="./assets/images/emojistar.png" appScrollMove #img2  id="img2" alt="emojistar" class=" absolute   top-6   2xl:left-[80%] xl:left-[85%] lg:left-[87%] md:left-[85%] hidden md:inline-block " >
+    </div>
+</div>

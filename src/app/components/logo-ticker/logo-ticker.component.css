@@ -1,0 +1,16 @@
+
+
+.imgS {
+
+  animation: scroll 20s linear infinite;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-223%);
+  }
+  100% {
+    transform: translateX(+100%);
+  }
+}

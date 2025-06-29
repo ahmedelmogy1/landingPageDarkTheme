@@ -1,0 +1,17 @@
+@keyframes appear {
+  from {
+    opacity: 0;
+    
+    transform: perspective(800px) rotateX(20deg);
+  }
+  to {
+    opacity: 1;
+    
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+img{
+    animation: appear linear !important;
+    animation-timeline: view() !important;
+    animation-range: entry 0 cover 40% !important  ;
+}

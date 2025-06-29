@@ -1,0 +1,7 @@
+img {
+    cursor: default !important;
+}
+
+img {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
