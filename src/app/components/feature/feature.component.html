@@ -1,14 +1,14 @@
-<div class="bg-black text-white py-20 sm:py-34">
-    <div class="container mx-auto">
-        <h2 class="text-center font-bold text-5xl sm:text-6xl tracking-tighter">Every thing you need </h2>
+<div class="bg-black text-white py-0 sm:py-34">
+    <div class="container  mx-auto ">
+        <h2 class="text-center font-bold text-4xl sm:text-6xl tracking-tighter">Every thing you need </h2>
         <p class="mt-5 text-center text-xl text-white/70">Enjoy customizeble lists , team work tools , and smart
             tracking all in one place . set tasks , get reminders
             , and see your progress simply and quickly</p>
        <div class="py-5"appGlowMask >
-         <div class="  mt-16 grid grid-cols-1 sm:grid-cols-3 gap-4 xl:w-[60%] lg:w-[70%] sm:w-[90%] w-[50%]   mx-auto " >
+         <div class="  mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4    mx-auto " >
             @for (feature of features; track $index) {
                 <div
-                class=" border border-white/10 relative  px-1  py-16 text-center rounded-xl  sm:px-4">
+                class=" border border-white/10 relative  px-1  py-10 sm:py-16 text-center rounded-xl  sm:px-4">
                 <div class="absolute inset-0 border-2 border-purple-600 rounded-xl mask-radial Card" 
                 style="-webkit-mask-image:radial-gradient(0px 0px at 0px 0px, red, transparent); mask-image: radial-gradient(0px 0px at 0px 0px, red, transparent);" >
                 </div>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="">
                     <h3 class="font-bold mt-4 w-fit mx-auto">{{feature.titel}}</h3>
-                    <p class="mt-2 max-w-40 text-center mx-auto">{{feature.description}}</p>
+                    <p class="mt-2  text-center mx-auto max-w-[400px] ">{{feature.description}}</p>
                 </div>
             </div>
             }

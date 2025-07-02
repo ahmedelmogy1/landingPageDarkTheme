@@ -1,0 +1,12 @@
+@layer ddd{
+    ::before{
+        content: "";
+        border: none;
+        outline: none;
+    }
+    ::after{
+        content: "";
+        border: none;
+        outline: none;
+    }
+}

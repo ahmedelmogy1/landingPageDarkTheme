@@ -1,12 +1,12 @@
-<div class="bg-black text-white  py-36 bg-gradient-to-b from-[#5D2CA8] to-black">
+<div class="bg-black text-white  py-12 sm:py-36 bg-gradient-to-b from-[#5D2CA8] to-black">
     <div class="container mx-auto">
 
-        <h2 class="text-center text-5xl lg:text-6xl font-bold tracking-tighter select-none">Frequently asked questionas </h2>
+        <h2 class="text-center text-4xl sm:text-6xl font-bold tracking-tighter select-none">Frequently asked questionas </h2>
         <div class="mt-12 px-4 lg:px-24 xl:px-56">
             @for (ask of asks; track $index) {
                 <div class="py-7 border-b border-white/30 px-5  select-none h-max" (click)="openClose(ask.ID)" >
-                    <div class="flex items-center cursor-pointer"><span class="block flex-1 text-lg font-bold"> {{ask.question}}</span><i class="fa-solid"  [class.fa-plus]='!ask.isOpen' [class.fa-minus]='ask.isOpen'></i></div>
-                    <div [class.max-h-96]="ask.isOpen"   [class.mt-6]="ask.isOpen" [class.mt-0]="!ask.isOpen" [class.max-h-0]="!ask.isOpen"  class="mt-6  transition-all duration-300  max-h-96 overflow-hidden ">{{ask.answer}}</div>
+                    <div class="flex items-center cursor-pointer"><span class="block flex-1 text-md sm:text-lg font-bold pe-2"> {{ask.question}}</span><i class="fa-solid"  [class.fa-plus]='!ask.isOpen' [class.fa-minus]='ask.isOpen'></i></div>
+                    <div [class.max-h-96]="ask.isOpen"   [class.mt-6]="ask.isOpen" [class.mt-0]="!ask.isOpen" [class.max-h-0]="!ask.isOpen"  class="mt-6  transition-all duration-300  max-h-96 overflow-hidden text-sm sm:text-lg ">{{ask.answer}}</div>
                 </div>
             }
         </div>
