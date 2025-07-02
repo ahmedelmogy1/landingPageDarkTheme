@@ -13,5 +13,5 @@
 img{
     animation: appear linear !important;
     animation-timeline: view() !important;
-    animation-range: entry 0% cover 70% !important  ;
+    animation-range: entry 0% cover 50% !important  ;
 }
